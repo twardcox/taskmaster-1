@@ -19,8 +19,14 @@
 
 ## Collaborators
 * Marisha Hosa
+* Nick Paro
 * Renee Messick
 * Kevin Couture
 * Travis Cox
+
+## Special Thanks to:
+* Marisha Hosa
+* Nick Paro
+### for assistance over and above.
 
 #### end of file

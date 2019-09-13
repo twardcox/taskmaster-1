@@ -6,12 +6,14 @@ import java.util.Date;
 
 @DynamoDBDocument
 public class HistoryObj {
-    String time;
-    String action;
+    private String time;
+    private String action;
+    private String assignee;
 
     public HistoryObj(String action){
         this.action = action;
         this.time = new Date(System.currentTimeMillis()).toString();
+        this.assignee = "none";
     }
 
     public HistoryObj(){};
@@ -32,6 +34,13 @@ public class HistoryObj {
         this.action = action;
     }
 
+    public String getAssignee() {
+        return assignee;
+    }
+
+    public void setAssignee(String assignee) {
+        this.assignee = assignee;
+    }
 
     public String toString() {
         return String.format("%s @ %s", this.getAction(), this.getTime());
