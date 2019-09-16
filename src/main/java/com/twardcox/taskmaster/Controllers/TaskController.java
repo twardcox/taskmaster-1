@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/v1")
 public class TaskController {
 
@@ -69,6 +69,7 @@ public class TaskController {
     @DeleteMapping("/tasks/{id}")
     public Task deleteTaskStatus(@PathVariable String id) {
         Task task = taskRepository.findById(id).get();
+        System.out.println("****************************" + task);
         taskRepository.delete(task);
         return task;
     }

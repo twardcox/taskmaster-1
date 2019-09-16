@@ -16,13 +16,14 @@ public class Task {
     private String image;
     private List<HistoryObj> history;
 
-    public Task (String id, String title, String description, String status, String assignee) {
+    public Task (String id, String title, String description, String status, String assignee, String image) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.status = status;
         this.assignee = assignee;
         this.history = new ArrayList<>();
+        this.image = image;
     }
 
     public Task() {
