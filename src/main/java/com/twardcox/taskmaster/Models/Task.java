@@ -13,8 +13,18 @@ public class Task {
     private String description;
     private String status;
     private String assignee;
-
+    private String image;
     private List<HistoryObj> history;
+
+    public Task (String id, String title, String description, String status, String assignee, String image) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.status = status;
+        this.assignee = assignee;
+        this.history = new ArrayList<>();
+        this.image = image;
+    }
 
     public Task() {
         this.history = new ArrayList<>();
@@ -69,6 +79,14 @@ public class Task {
     }
     public void setHistory(List<HistoryObj> history) {
         this.history = history;
+    }
+
+    @DynamoDBAttribute
+    public String getImage() {
+        return image;
+    }
+    public void setImage(String image) {
+        this.image = image;
     }
 
 
