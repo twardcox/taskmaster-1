@@ -17,6 +17,9 @@
     * Statuses progress from:  `Available` -> `Assigned` -> `Accepted` -> `Finished`.
 * PUT: `/api/v1/tasks/{id}/assign/{assignee}` - assigns a task to an assignee
 
+## How to use Lambda
+* Lambda automatically works when you save an image to an entry.
+
 ## Collaborators
 * Marisha Hosa
 * Nick Paro
