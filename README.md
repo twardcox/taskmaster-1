@@ -2,6 +2,8 @@
 
 ## [Deployed Endpoint](http://taskmaster-group.us-west-2.elasticbeanstalk.com/api/v1/tasks)
 
+## [APIGateway link](https://5dkhpmdw22.execute-api.us-west-2.amazonaws.com/test/tasks)
+
 ### Available Routes
 * GET: `/api/v1/tasks` - returns all tasks from the db in `json` format.
 * GET: `/api/v1/users/{name}/tasks` - returns all task assigned to the `name`
@@ -19,6 +21,9 @@
 
 ## How to use Lambda
 * Lambda automatically works when you save an image to an entry.
+
+## Database records
+
 
 ## Collaborators
 * Marisha Hosa
